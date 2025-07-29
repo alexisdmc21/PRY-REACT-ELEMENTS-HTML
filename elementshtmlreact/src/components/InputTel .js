@@ -6,4 +6,5 @@ function InputTel(props){
     )
 }
 
+
 export default InputTel;
