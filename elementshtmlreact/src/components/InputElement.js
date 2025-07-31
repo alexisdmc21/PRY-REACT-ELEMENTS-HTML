@@ -1,14 +1,18 @@
-function Input(props){
-    return(
+import React from "react";
+
+const Input = React.forwardRef((props, ref) => {
+    return (
         <div>
             <input 
-            type={props.type}
-            placeholder={props.placeholder}
-            value={props.value}
-            onChange={props.onChange}
+                ref={ref}
+                type={props.type}
+                name={props.name}
+                placeholder={props.placeholder}
+                className={props.className}
+                {...props}
             />
         </div>
     );
-}
+});
 
 export default Input;
