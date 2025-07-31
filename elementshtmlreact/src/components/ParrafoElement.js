@@ -2,9 +2,7 @@ import React from "react";
 
 function ParrafoElement(props){
     return(
-        <div>
-            <p>{props.texto}</p>
-        </div>
+        <p className={props.className}>{props.texto}</p>
     );
 }
 
