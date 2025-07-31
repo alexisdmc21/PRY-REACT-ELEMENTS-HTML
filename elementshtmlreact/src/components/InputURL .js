@@ -1,8 +1,8 @@
 import Input from "./InputElement";
 
-function InputURL(){
+function InputURL(props){
     return(
-        <Input {...props} type="email"/>
+        <Input {...props} type="URL"/>
     )
 }
 
