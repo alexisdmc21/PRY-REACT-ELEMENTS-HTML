@@ -2,11 +2,9 @@ import React from "react";
 
 function Enlace(props){
     return(
-        <div>
-            <a href={props.href}>
+            <a href={props.href} target={props.target}>
                 {props.texto} 
             </a>
-        </div>
     );
 }
 
