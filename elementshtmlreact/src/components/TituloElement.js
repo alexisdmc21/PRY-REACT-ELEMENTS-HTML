@@ -1,13 +1,11 @@
 import React from "react";
 
 function TituloElement(props){
-    const Titulo= "h"+props.nivel|| 1;
+    const Tag= "h"+ (props.nivel|| 1);
     return(
-        <div>
-            <Titulo>
+            <Tag className="text-black">
                 {props.texto}
-            </Titulo>
-        </div>
+            </Tag>
     );
 }
 
